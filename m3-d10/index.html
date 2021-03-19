@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg netflix-nav-bg">
+        <a class="navbar-brand mx-4" href="#"><img src="netflix2.png" width="120"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mx-3mt-2 mt-lg-0">
+              <li id="homeLink" class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Add Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            
+          </ul mx-5>
+          <ul class="navbar-nav mx-5 mt-2 mt-lg-0 form-inline">
+
+              <li class="nav-item">
+
+                <a id="searchBtn" class="nav-link btn px-1 py-1" data-toggle="collapse" href="#collapseExample" role="button" onclick="iconDisplay()" aria-expanded="false" aria-controls="collapseExample">
+                  <ion-icon name="search-outline" class="text-white"></ion-icon>
+                </a>
+               
+              </li>
+              <div class="collapse" id="collapseExample">
+                <form class="form-inline my-sm-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                </form>
+              </div>
+              
+              <!-- <div onclick="toggleSearch()">
+                <ion-icon name="search-outline" class="text-white"></ion-icon>
+                <input id="searchbar" type="search" class="d-none">
+              </div> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">KIDS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
+              </li>
+              <div class="dropdown">
+                <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <img src="smiley1.png" width="30"/>
+                </a>
+              
+                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#"><img src="smiley1.png" width="30"/>Profile1</a>
+                  <a class="dropdown-item" href="#"><img src="smiley4.png" width="30"/>Profile2</a>
+                  <a class="dropdown-item" href="account.html">Account</a>
+                </div>
+              </div>
+
+              
+          </ul>
+        </div>
+      </nav>
+      <main>
+      <div class="container-fluid">
+        <div class="row justify-content-between mt-3">
+            <div class="col-8">
+                <div class="row">
+                    <div class="col-3">
+                        <h3>TV SHOWS</h3>
+                    </div>
+                    <div class="col-9">
+                        
+
+                                <select name="movies" id="movies">
+                                    <option value="Action">Action</option>
+                                    <option value="Comedy">Comedy</option>
+                                    <option value="Thriller">Thriller</option>
+                                    <option value="Horror">Horror</option>
+                                    <option value="Romance">Romance</option>
+                                    <option value="Fantasy">Fantasy</option>
+                                    <option value="Historical">Historical</option>
+                                </select>
+                    </div>
+                </div>
+                
+                
+                    
+                
+            </div>
+            <div class="col-4">
+              <div class="row d-flex justify-content-flex-end align-items-end">
+                  <div class="col-2 pl-5">
+                      <img src="left1.png" style="background-color: grey;">
+                  </div>
+                  <div class="col-2">
+                    <img src="left1.png" style="background-color: grey;">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div id="container" class="container">
+        <div id="group" class="row">
+          
+          
+        </div>
+      </div>
+      </main>
+      <footer class="container">
+        <div class="row social-icons">
+          <div class="container">
+               <ul>
+            <li class="list-inline-item">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </li>
+            <li class="list-inline-item">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </li>
+            <li class="list-inline-item">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </li>
+            <li class="list-inline-item">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </li>
+          </ul>
+            <div class="row">
+              <div class="col col-12 col-sm-6 col-lg-3 px-0 footer-info ">
+                <ul>
+                  <li>Audio and Subtitles</li>
+                  <li>Media Center</li>
+                  <li>Privacy</li>
+                  <li>Contact Us</li>
+                  <br />
+                  <br />
+                  <li>Service Code</li>
+                  <li >&#169 1997-2021 Netflix, Inc.</li>
+                </ul>
+              </div>
+              <div class="col col-12 col-sm-6 col-lg-3 px-0 footer-info">
+                <ul>
+                  <li>Audio Description</li>
+                  <li>Investor Relations</li>
+                  <li>Legal Notices</li>
+                </ul>
+              </div>
+              <div class="col col-12 col-sm-6 col-lg-3 px-0 footer-info">
+                <ul>
+                  <li>Help Center</li>
+                  <li>Jobs</li>
+                  <li>Cookie Preferences</li>
+                </ul>
+              </div>
+              <div class="col col-12 col-sm-6 col-lg-3 px-0 footer-info">
+                <ul>
+                  <li>Gift Cards</li>
+                  <li>Terms of Use</li>
+                  <li>Corporate Information</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <script>
+        window.onload=async()=>{
+              const link="https://striveschool-api.herokuapp.com/api/movies/"
+              let products=document.getElementById("group")
+              try{
+                document.getElementById("loadingSpinner").classList.toggle("d-none");
+                  let response = await fetch(link, {
+                    headers: {
+                        "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDUyMDY5NDg5YzI2ZjAwMTU3ZjljNDgiLCJpYXQiOjE2MTYxNTU0NDUsImV4cCI6MTYxNzM2NTA0NX0.iuCNU_eKVC66jM2Hlp0YhdVtAfn6-L2DPQCmDh0LaZ4"
+                    }
+                  })
+                  let data = await response.json()
+                  console.log(data)
+                  document.getElementById("loadingSpinner").classList.toggle("d-none");
+                  if(data.length >0){
+                      data.forEach((event) => {
+                          /*let cards = document.createElement("div")
+                          cards.classList.add("card")
+                          let image = document.createElement("img")
+                          image.classList.add("card-img-top")
+                          image`${event.image}`
+                          let cardBody=document.createElement("div")
+                          cardBody.classList.add("card-body")
+                          let hash=document.createElement("h5")
+                          hash.classList.add("card-title")
+                          hash.innerText=`${event.name}`
+                          let paragraph=document.createElement("p") 
+                          paragraph.classList.add("card-text")
+                          paragraph.innerText=`${event.description}`
+                          let p2=document.createElement("p small")
+                          p2.classList.add("card-text", "text-muted")
+                          p2.innerText=`${event.price}`
+                          cardBody.appendChild(hash,paragraph,p2)
+                          cards.appendChild(image,cardBody,hash,paragraph,p2)
+                          
+                          products.appendChild(cards)*/
+
+                          products.innerHTML += /*html*/`
+                            <div id='card' class="card col col-sm-12 col-md-4">
+                              <div class="card-img-top">
+                                <img src="${event.imageUrl}" class='img-fluid'>
+                              </div>  
+                              <div class="card-body">
+                                <h5 class="card-title">${event.name}</h5>
+                                <h5 class="card-title">${event.brand}</h5>
+                                <p class="card-text">${event.description}</p>
+                                
+                                <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                <button type='button' class="btn btn-sm btn-outline-secondary" style="display: none"><i class="fas fa-cart-plus">Add to Cart</i></button>
+                                <a href="detail.html?id=${event._id}"><button type='button' class="btn btn-sm btn-outline-secondary" >Details</button></a>
+                               
+                                
+                              </div>
+                            </div>
+                          `
+                      });
+                  }else{
+                      products.innerText=`<h4>There is no products yet</h4>`
+                  }
+              }catch(error){
+                  console.log(error)
+              }
+          }
+      </script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

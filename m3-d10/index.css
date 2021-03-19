@@ -1,0 +1,76 @@
+.netflix-nav-bg {
+  background-color: black;
+  font-size: 14px;
+  height: 68px;
+}
+
+.nav-link {
+  color: white;
+  font-family: "Martel Sans", sans-serif;
+}
+
+.nav-link > a:hover {
+  font-weight: 700;
+}
+
+.btn-secondary {
+  background-color: black;
+  border: none;
+}
+
+.dropdown-menu {
+  background-color: black;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.img {
+  object-fit: contain;
+}
+
+#homeLink {
+  font-family: "Martel Sans", sans-serif;
+}
+
+/* .gg-search {
+      box-sizing: border-box;
+      position: relative;
+      display:block;
+      transform: scale(var(--ggs,1));
+      width: 16px;
+      height: 16px;
+      border: 2px solid;
+      border-radius: 100%;
+      border-color: white;
+      margin-left: -4px;
+      margin-top: -4px
+      
+  }
+  .gg-search::after {
+      content: "";
+      display: block;
+      box-sizing: border-box;
+      position: absolute;
+      border-radius: 3px;
+      width: 2px;
+      height: 8px;
+      background: white;
+      transform: rotate(-45deg);
+      top: 10px;
+      left: 12px
+  } */
+
+.fa-bell {
+  color: white;
+}
+select {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+body {
+  background-color: black;
+  color: white;
+}
