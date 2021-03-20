@@ -20,7 +20,7 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg netflix-nav-bg">
-        <a class="navbar-brand mx-4" href="#"><img src="netflix2.png" width="120"/></a>
+        <a class="navbar-brand mx-4" href="#"><img src="./images/netflix2.png" width="120"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -71,12 +71,12 @@
               </li>
               <div class="dropdown">
                 <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  <img src="smiley1.png" width="30"/>
+                  <img src="./images/smiley1.png" width="30"/>
                 </a>
               
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-                  <a class="dropdown-item" href="#"><img src="smiley1.png" width="30"/>Profile1</a>
-                  <a class="dropdown-item" href="#"><img src="smiley4.png" width="30"/>Profile2</a>
+                  <a class="dropdown-item" href="#"><img src="./images/smiley1.png" width="30"/>Profile1</a>
+                  <a class="dropdown-item" href="#"><img src="./images/smiley4.png" width="30"/>Profile2</a>
                   <a class="dropdown-item" href="account.html">Account</a>
                 </div>
               </div>
@@ -115,10 +115,10 @@
             <div class="col-4">
               <div class="row d-flex justify-content-flex-end align-items-end">
                   <div class="col-2 pl-5">
-                      <img src="left1.png" style="background-color: grey;">
+                      <img src="./images/left1.png" style="background-color: grey;">
                   </div>
                   <div class="col-2">
-                    <img src="left1.png" style="background-color: grey;">
+                    <img src="./images/left1.png" style="background-color: grey;">
                 </div>
               </div>
             </div>
@@ -194,7 +194,7 @@
 
     <script>
         window.onload=async()=>{
-              const link="https://striveschool-api.herokuapp.com/api/movies/"
+              const link="https://striveschool-api.herokuapp.com/api/movies/${category}"
               let products=document.getElementById("group")
               try{
                 
@@ -207,7 +207,7 @@
                   console.log(data)
                   
                   if(data.length >0){
-                      data.forEach((event) => {
+                      data.forEach((category) => {
                           /*let cards = document.createElement("div")
                           cards.classList.add("card")
                           let image = document.createElement("img")
@@ -250,7 +250,7 @@
                           `
                       });
                   }else{
-                      products.innerText=`<h4>There is no products yet</h4>`
+                      products.innerHTML=`<h4>There is no products yet</h4>`
                   }
               }catch(error){
                   console.log(error)
